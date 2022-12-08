@@ -1,0 +1,54 @@
+.hover-zoomin a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+.hover-zoomin img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+.hover-zoomin:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+  
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+
+header {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+  /* On small screens, set height to 'auto' for sidenav and grid */
+ @media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
