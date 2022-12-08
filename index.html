@@ -1,0 +1,316 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<!-- head section containing style chart including class based defintions--> 
+<body>
+<a name="top"></a>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Menu</a>
+            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">   <!-- flex box based index list linking directly to named sections--> 
+            <ul class = "nav navbar-nav">
+                <li><a href="#bio">Personal Bio</a></li>
+                <li><a href="#contact">Contact Details</a></li>
+                <li><a href="#education">Education Details</a></li>
+                <li><a href="#skills">Admin, Technical & Management Skills</a></li>
+                <li><a href="#employment">Employment History</a></li>
+                <li><a href="#WebDesign">My Web Design</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center">
+        <h1>Personal Bio</h1>
+        <div class="jumbotron">
+            <div class="container text-left">   
+                <p>Hi, I'm Simon and I'm from Northern Ireland, where I grew up during The Troubles. I left to study in 
+                    Edinburgh from 1998 where I completed a Honours Degree in Mechanical Engineering. After my degree I 
+                    completed a Chartered Mangers Institute Level 5 Diploma in Management as a 6 month post grad course.</p>
+                <p>Once I was armed with bits of paper, I went to work in the oil industry as a Measurement/Logging While Drilling 
+                    Engineer. This consisted of utilising electronic sensors above the drill bit which read the physical properties 
+                    of the rock, such as gamma signature, resistivity, density, and porosity. This data was presented as logs 
+                    (very long graphs), ASCII/LAS data and of course, we used a piece of complex database software to achieve it, 
+                    which i now suspect was SQL based given the nature of the Query logic. This job took me all over the world, 
+                    having worked in the U.S., Europe and the Middle East. Below are some photos of me at work.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-3 text-center">    
+        <h2>The Oil Patch!</h2>
+        <br>
+        <div class="row">
+          <!--defining columns used within the row, 4 elements per row plus call zoomin CSS file-->
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/OB1DMlV.jpeg" class="img-responsive" style="width:auto;height:350px;" alt="Image" title ="Not even as comfortable as it looks, which isn't very">
+                    <br>
+                    <p>Helicopter Survival Gear</p> 
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="thumbnail">
+                    <img src="https://i.imgur.com/IqqIKYs.jpeg" class="img-responsive" style="width:auto;height:350px;" alt="Image" title="Equipment problems, so it ended up being a 19 hour day">
+                    <br>
+                    <p>Christmas Day on the rig</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/DuHa6UX.jpeg" class="img-responsive" style="width:auto;height:350px;" alt="Image" title="You should have seen how they got us on the rig">
+                    <br>
+                    <p>Taking a boat to the rig in the Arabian Gulf</p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/RXHFicL.jpeg" class="img-responsive" style="width:auto;height:350px;" alt="Image" title ="I had at least 2, very often more, of these screens up.">
+                    <br>
+                    <p>My data montioring screens</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container text-left">
+            <p>Outside of work, I live in a small town in Scotland, having moved out of Edinburgh to the countryside during the pandemic. 
+            I enjoy playing the guitar, and have done since i was 11. Some pics of my Man Cave below which I'm unjustifiably proud of 
+            (for more info on that, see "An Irish Guitar Player in Scotland" in the My Web Design section). Logic and critical thinking 
+            appeal to me. I am intensely interested and engaged in abstract tasks such as the Python coding we did in level one and the 
+            database/SQL tasks from level 3. Figuring out how to manipulate code to make it do what i want is very rewarding.</p>
+        </div>
+    </div>    
+    <div class="container-fluid bg-3 text-center">    
+        <h2>Home Studio</h2>
+        <br>
+        <div class="row">
+        <!--defining columns used within the row, 4 elements per row plus call zoomin CSS file-->
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/eBGQkkp.jpeg" class="img-responsive" style="width:auto;height:250px;" alt="Image" title="One side of the Man Cave">
+                    <br>
+                    <p>Guitars</p> 
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/14j8hiS.jpeg" class="img-responsive" style="width:auto;height:250px" alt="Image" title="Other side of the Man Cave">
+                    <br>
+                    <p>Amps</p>
+                </div>
+            </div>
+            <div class="row">
+            <!--defining columns used within the row, 4 elements per row plus call zoomin CSS file-->
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src ="https://i.imgur.com/n5pmPDC.jpg" class="img-responsive" style="width:auto;height:250px" alt="Image" title="One side of the Man Cave">
+                    <br>
+                    <p>Production station</p> 
+                </div>
+            </div>
+            <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+        </div>
+    </div>
+    <br>
+    <!-- grid boxes for section header --> 
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "contact">Contact Details:</h2>
+        <div class="jumbotron text-left">
+            <ul>
+                <li> Telephone: +44(0) 0123456789</li>
+                <li> Email:     me@mail.com</li>
+                <li> LinkedIn:<a href="https://www.linkedin.com/in/simon-c-256629116/" target="_blank">  My LinkedIn Profile</a></li>
+            </ul>
+        </div>
+    <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    <br>
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "education">Education Highlights:</h2>
+        <div class="jumbotron text-left">
+            <ul>
+                <li>BEng Hons Mechanical Engineering with Distinction.</li>
+                <li>Level 5 Diploma in management awarded by CMI UK (Reg No. P50013856).</li>
+            </ul>
+        </div>
+    <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    </div>
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "skills">Admin, Technical & Management Skills:</h2>
+        <div class="jumbotron text-left">
+            <ul>
+                <li>Highly analytical with logical problem-solving skills.</li>
+                <li>Worked on multiple high-profile projects, preparing 
+                    daily reports, daily admin, Data QC and Presentation, 
+                    being responsible for live Logging While Drilling activities 
+                    and Completion Reports</li>
+                <li>Used Oil and Gas software tools for testing, configuring, 
+                    and troubleshooting downhole hardware sensor packages.</li>
+                <li>Led the planning and execution of work on both shifts, 
+                    equipment logistics documentation to and from rig site, 
+                    and data/report delivery to customer.</li>
+                <Li>Responsible for writing test procedure/ planning documents 
+                    based on requirement analysis, which was referred to by 
+                    multi-functional teams to make sure all the test activities 
+                    are co-ordinated.</Li>
+                <li>Reported and prioritised the Incidents on the failures in 
+                    software and equipment.</li>
+                <li>Co-ordinated the activities of company personnel and equipment 
+                    logistics on site.</li>
+                <li>Verified the software and sensor against the requirement 
+                    specifications by calibrating tools against the verification 
+                    source.</li>
+                <li>Responsible for training and mentoring trainee and junior 
+                    members of the field teams.</li>
+                <li>Facilitated the design requirements by providing detailed 
+                    specifications for the various tools such as formation pressure 
+                    testing tool.</li>
+                <li>Re-programmed tools to accommodate change in requirements and 
+                    parameters.</li>
+                <li>Ensured that the project documents are complete, accurate as 
+                    for status and stored appropriately, so these can be used for 
+                    future references and lessons learnt.</li>
+                <li>Track Key Performance Indicators for the projects.</li>
+                <li>Experienced diverse employment cultures having worked in 
+                    multiple countries.</li>
+            </ul>
+        </div>
+    <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    </div>
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "education">Education Highlights:</h2>
+        <div class="jumbotron text-left">
+            <ul>
+                <li>BEng Hons Mechanical Engineering with Distinction.</li>
+                <li>Level 5 Diploma in management awarded by CMI UK (Reg No. P50013856).</li>
+            </ul>
+        </div>
+    <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    </div>
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "employment">Employment History:</h2>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">April 2017 to December 2021: Consultant Aberdeen, Scotland</h4>
+            <h4 class = "heading">MLWD Consultant</h4>
+            <ul>
+                <li>Undertaken various projects for Baker Hughes and Weatherford as a Consultant 
+                        (Measurement / Logging While Drilling) MLWD Engineer.</li>
+                <li>Responsible for acquisition of Formation Property data while drilling using 
+                        the appropriate software and hardware tools.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">December 2013 to February 2016: Baker Hughes Al Khobar, Saudi Arabia</h4>
+            <h4 class = "heading">MLWD Engineer</h4>
+            <ul>
+                <li>Undertaken various projects for Baker Hughes and Weatherford as a Consultant 
+                        (Measurement / Logging While Drilling) MLWD Engineer.</li>
+                <li>Responsible for acquisition of Formation Property data while drilling using 
+                        the appropriate software and hardware tools.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">December 2013 to February 2016: Baker Hughes Al Khobar, Saudi Arabia</h4>
+            <h4 class = "heading">MLWD Engineer</h4>
+            <ul>
+                <li>Baker Hughes INTEQ is a leading provider of MWD drilling technology to the oil industry 
+                    worldwide.</li>
+                <li>Senior MLWD Engineer, leading high-end, high-cost projects to an excellent standard and 
+                    helping to gain new business and contracts as a result.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">September 2005 December 2013: Sperry Drilling Services, Aberdeen, Scotland</h4>
+            <h4 class = "heading">MLWD Engineer</h4>
+            <ul>
+                <li>Sperry Drilling services is a provider of MWD drilling technology to the oil industry worldwide.</li>
+                <li>Senior MLWD Engineer, leading high-end, high-cost jobs to an excellent standard and helping to 
+                    gain new business and contracts as a result.</li>
+                <li>Worked on multiple projects in the United States, Europe, and U.K.</li>
+                <li>Real Time Operation Centre Engineer providing live troubleshooting support for ongoing jobs related 
+                    to hardware, software, and systems.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">March 2005 to August 2005: Flextronics PLC, Belfast, N. Ireland</h4>
+            <h4 class = "heading">Quality Engineer</h4>
+            <ul>
+                <li>Flextronics is a multinational telecoms software and infrastructure manufacturer.</li>
+                <li>Responsible for researching and laying out a framework for a multi-site quality manual 
+                    which was assessed for ISO 9000:2001 Quality management accreditation. and rolled out 
+                    over three sites on three continents saving company £30k.</li>
+                <li>Responsible for liaising between different departments within the N. Irish site under 
+                    consultation with the operations director in preparation for the manual.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">July 2004 to December 2004: Langford Lodge Engineering, Crumlin, N. Ireland</h4>
+            <h4 class = "heading">Temp Engineer</h4>
+            <ul>
+                <li>Langford lodge is the leading producer of aircraft ejector seats in the world, with contracts 
+                    that include the British Ministry of Defence and U.S. Navy.</li>
+                <li>Responsible for creation of Project Plan and lead time analysis for purchase and installation 
+                    of new CNC (Computer Numerical Control) machines.</li>
+                <li>Produced materials estimation specs for new contracts.</li>
+                <li>Analysed and rationalised packing specs for finished components.</li>
+                <li>Evaluated and created risk assessments factory wide for manually 
+                    operated and CNC machines.</li>
+                <li>Realised cost savings of £15k for the company.</li>
+            </ul>
+        </div>
+        <div class="jumbotron text-left">
+            <h4 class = "heading">April 2003 to October 2003: Faurecia Automotive Systems, Vesoul, France</h4>
+            <h4 class = "heading">Student Engineer</h4>
+            <ul>
+                <li>Faurecia is a world leader in modular automotive components, producing for every major car 
+                    manufacturer with sites on every continent in the world</li>
+                <li>Designed and planned and implemented a new plant wide Stock storage and distribution system.</li>
+                <li>Established a new distribution scheduling system.</li>
+                <li>Worked independently with minimal supervision on project by setting own parameters and 
+                    objectives.</li>
+                <li>System was subsequently implemented with highly increased efficiency across two other 
+                    sites in the region.</li>
+                <li>As a result of above deliveries, saved the company £26k in 6 months of work.</li>
+            </ul>
+        </div>
+        <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    </div>
+    <div class="container-fluid">
+        <h2 class = sectionheading id = "WebDesign">My Web Design:</h2>
+        <div class="jumbotron text-left">
+            <div class="container text-left">   
+                <p>The following are some examples of web design projects I've been asked to complete as a part of my Software
+                    development bootcamp course</p>
+                <ul>
+                    <li><a href="/myguitars/index" target="_blank">An Irish Guitar Player in Scotland</a></li>
+                    <li><a href="/shopping/main" target="_blank">HyperionDev Shopping</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#top" type="submit" class="btn btn-primary">Return to top</a></button>
+    </div>
+    <br>
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>
